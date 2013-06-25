@@ -23,7 +23,7 @@ var payload = {
 };
 
 var params = {
-  url : "",
+  url : _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DWX Attendees')/items",
   type : "POST",
   contentType : 'application/json;odata=verbose',
   data : JSON.stringify(payload),
