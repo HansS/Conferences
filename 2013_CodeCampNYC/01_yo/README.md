@@ -1,0 +1,1 @@
+Yo is a scaffolding tool used by yeoman to easily create new projects
