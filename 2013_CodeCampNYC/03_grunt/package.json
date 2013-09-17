@@ -1,0 +1,15 @@
+{
+  "name": "03_grunt",
+  "version": "0.0.0",
+  "description": "Grunt is a JavaScript task runner, which is responsible for 'compilation' in the yeoman context. Fledged with various tasks, grunt will   * Compile CoffeeScript to JavaScript   * Compile Jade to HTML   * Compile SCSS to CSS   * Compress JavaScript and CSS   * Compress images   * Create image-maps   * deploy the required bits from your app to a deployment location",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-coffee" : "*"
+  }
+}
