@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>ng-start</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="styles/site.css" />
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>ng-start</h1>
+			<div ng-app="ngStartApp">
+				<div ng-controller="gettingStartedController">
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" class="form-control" ng-model="name" placeholder="Put Name here" />
+						</div>
+						<div class="col-md-6">
+							<span>{{name}}</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel panel-danger">
+								<div class="panel-heading">
+									Add a new Topic
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-9">
+											<input type="text" ng-model="newTopic" class="form-control" placeholder="Put Topic here"/>
+										</div>
+										<div class="col-md-3">
+											<a href="#" class="btn btn-default" ng-click="addTopic()">Add Topic</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="panel panel-info" ng-repeat="t in topics">
+								<div class="panel-heading">
+									{{name}}
+								</div>
+								<div class="panel-body">
+									{{t}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
