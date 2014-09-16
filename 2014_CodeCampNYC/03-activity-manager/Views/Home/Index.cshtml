@@ -1,0 +1,19 @@
+﻿
+<div ng-app="sessionsApp">
+    <div ng-controller="sessionCtrl">
+
+
+        <div class="row">
+            <div class="col-md-9">
+                <div ng-repeat="s in sessions">
+                    <nyc-session info="s"></nyc-session>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <nyc-add-session></nyc-add-session>
+            </div>
+        </div>
+
+    </div>
+</div>
+@Scripts.Render("~/bundles/domain/sessions")
